@@ -5,6 +5,13 @@
   "rules": {
 		"prettier/prettier": ["error"],
 		"import/no-extraneous-dependencies": "off",
-		"no-restricted-syntax": "off"
-  }
+		"no-restricted-syntax": "off",
+		"import/no-unresolved": "off",
+		"no-console": "off",
+		"no-new": "off"
+	},
+	"env": {
+		"browser": true,
+		"node": true
+	}
 }
