@@ -35,6 +35,6 @@ window.addEventListener('DOMContentLoaded', () => {
 	const textDiv = document.getElementById('text-div');
 	const text = document.createElement('h1');
 	text.classList.add('col-12');
-	text.textContent = `~ ${HelloWorld()} ~`;
+	text.textContent = `~ ${HelloWorld()}~`;
 	textDiv.appendChild(text);
 });

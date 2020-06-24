@@ -3,7 +3,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const fs = require('fs');
 const path = require('path');
-const { InjectManifest } = require('workbox-webpack-plugin');
 const paths = require('./paths');
 /* Building plugins */
 const plugins = [
@@ -28,10 +27,6 @@ const plugins = [
 				},
 			},
 		],
-	}),
-	new InjectManifest({
-		swSrc: `${paths.js}/sw.js`,
-		maximumFileSizeToCacheInBytes: 10 * 1014 * 1024,
 	}),
 ];
 
