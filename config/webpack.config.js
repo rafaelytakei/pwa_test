@@ -31,6 +31,7 @@ const plugins = [
 	}),
 	new InjectManifest({
 		swSrc: `${paths.js}/sw.js`,
+		maximumFileSizeToCacheInBytes: 10 * 1014 * 1024,
 	}),
 ];
 
@@ -126,9 +127,8 @@ module.exports = {
 					'style-loader',
 					{
 						loader: 'css-loader',
-						options: { sourceMap: true, importLoaders: 1 },
+						options: { sourceMap: true, importLoaders: 2 },
 					},
-					{ loader: 'postcss-loader', options: { sourceMap: true } },
 					{ loader: 'resolve-url-loader' },
 					{ loader: 'sass-loader', options: { sourceMap: true } },
 				],

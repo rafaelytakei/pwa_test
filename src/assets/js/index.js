@@ -2,10 +2,11 @@
 
 import 'Styles/main.scss';
 
-/* import $ from 'jquery'; */
 import HelloWorld from 'Modules/HelloWorld';
 import WebpackLogo from 'Images/webpack-logo.svg';
 import buildNavBar from 'Modules/navbar';
+
+/* import $ from 'jquery'; */
 
 if ('serviceWorker' in navigator) {
 	window.addEventListener('load', () => {
